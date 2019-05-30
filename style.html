@@ -1,0 +1,291 @@
+<html>
+
+    <head>
+        <title>PrincetonClubs</title>
+
+        <link rel="icon" href="logo.png">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <style>
+
+            .col {
+                margin-top: 70px;
+                height: 100%;
+                overflow: scroll;
+            }
+
+            nav {
+                background-color: #000;
+                /*margin:0px 30px 0px 30px;*/
+            }
+
+            img.logo {
+                height: 60px;
+                width: 45px;
+                padding: 0px 0px 5px 7px;
+                margin-left:15px;
+                margin-top: 0px;
+            }
+
+            .nav-div h2 {
+                display: inline-block;
+                padding: 17px 10px 0px 20px;
+                margin:0px;
+                color:#fff;
+                font-weight:100;
+                letter-spacing: 3px;
+                font-size:30px;
+                font-variant:small-caps;
+            }
+
+            .sidebar h2 {
+                font-weight:300;
+                letter-spacing: 3px;
+                font-size:26px;
+                font-variant:small-caps;
+            }
+
+            .cont-right {
+                float: right;
+                font-size: 20px;
+                padding-top:20px;
+                padding-right:30px;
+                text-transform: uppercase;
+                font-weight: 100;
+                letter-spacing: 3px;
+                color:#fff;
+            }
+
+            .nav-div {
+                display:inline-block;
+                color:#ddd;
+            }
+
+            .nav-div a {
+                color:#ccc;
+            }
+
+            .nav-div a:hover {
+                text-decoration: none;
+                color:#fff;
+            }
+
+            a.login {
+                border: 1px solid #FF8F00;
+                padding:10px 15px 10px 15px;
+                margin-left:10px;
+                color: #FF8F00;
+                text-transform: uppercase;
+            }
+
+
+            a.login:hover {
+                background-color: #FF8F00;
+                color:#000;
+                text-decoration: none;
+            }
+
+            .sidebar {
+                background-color:#eee;
+                border-right: 1px #ddd solid;
+            }
+
+            .buttonClass { 
+                display:block;
+            }
+
+            .inline {
+                display:inline-block;
+            }
+
+            .block {
+                display: block;
+                border:none;
+            }
+
+            #search, #typebut, #tryout, #time, #testButton, #gender {
+                margin-top: 20px;
+            }
+
+            #typebut {
+                width:100%;
+                height:34px;
+                color:#000;
+                font-variant:small-caps;
+                font-size:16px;
+                letter-spacing: 1px;
+                margin-top: 20px;
+            }
+
+
+            #typebut span {
+                float:right;
+                padding-top: 3px;
+            }
+
+            #testButton {
+                width:100%;
+                height:37px; 
+                font-variant:small-caps;
+                font-size:18px;
+                letter-spacing: 1px; 
+                background-color:#FF8F00;
+                margin-top: 20px;
+            }
+
+            p.descr {
+                padding: 10px 0px 0px 215px;
+                /*font-weight:200;*/
+            }
+
+            h1.clubName {
+                letter-spacing: 3px;
+                font-variant: small-caps;
+                font-weight: 100;
+            }
+
+            h2.factsHeader {
+                margin-top: 75px;
+                font-size: 22px;
+                font-weight: 100;
+                letter-spacing: 2px;
+            }
+
+            .factsDiv p {
+                margin-top:3px;
+                margin-bottom: 0px;
+            }
+
+            .module {
+                border-top: 1px solid #ddd;
+                overflow: hidden;
+                padding-bottom: 30px;
+            }
+
+            option {
+                text-align: center;
+            }
+
+            body {
+                background-image:url('pton.jpg');
+                background-size: cover;
+                background-position: top;
+            }
+
+            div.intro, div.introBack {
+                margin:auto 25% auto 25%;
+                display:table;
+                position: absolute;
+                top:0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                overflow: hidden;
+                padding:30px;
+            }
+
+            div.introBack {
+                background-color:#111;
+                opacity:0.9;
+                z-index: -3;
+                overflow: hidden;
+            }
+
+            div.intro {
+                width:65%;
+            }
+
+            .intro p {
+                font-size:16px;
+                text-align: center;
+                color:#fff;
+                font-weight:100;
+                letter-spacing:2px;
+                padding: 10px 0px 20px 0px;
+            }
+
+            .intro h1 {
+                color:#fff;
+                font-weight:100;
+                letter-spacing: 3px;
+                font-size:55px;
+                font-variant:small-caps;
+                text-align: center;
+            }
+
+            .introa {
+                width:250px;
+                margin-left: auto;
+                margin-right:auto;
+                border: 1px solid #FF8F00;
+                padding:10px 15px 10px 15px;
+                font-size: 16px;
+                color: #FF8F00;
+                text-transform: uppercase;
+                text-align: center;
+                font-weight:100;
+                letter-spacing: 2px;
+                display:block;
+            }
+
+            .introa:hover {
+                background-color: #FF8F00;
+                color:#000;
+                text-decoration: none;
+                font-weight: 200;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="brand">
+        </div>
+        <nav class="navbar-fixed-top">
+            <div class="nav-div">
+                <a href="index.html">
+                    <img class="logo" src="logoBlack.png">
+                    <h2>PrincetonClubs</h2>
+                </a>
+            </div>
+            <div class="nav-div cont-right">
+                <a>About</a>
+                <a class="login">Login</a>
+            </div>
+        </nav>
+
+        <div class="intro">
+            <h1>PrincetonClubs</h1>
+            <p>For all your club search needs.</p>
+            <a class="introa" href="clubs.html">Look for clubs</a>
+        </div>
+        <div class="introBack">
+            <p></p>
+        </div>
+        
+
+        <script>
+
+        $(document).ready(function() {
+            var height = $('.intro').height()+60;
+            var width = $('.intro').width()+60;
+            console.log(height);
+            $('.introBack').css('width', width+'px');
+            $('.introBack').css('height', height+'px');
+        })
+        
+
+        
+
+        </script>
+    </body>
+</html>

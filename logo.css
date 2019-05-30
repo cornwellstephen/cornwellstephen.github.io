@@ -1,0 +1,47 @@
+html { width: 100%; }
+
+body {
+    background-color: #FFF;
+    /*ea3e8b pink*/
+    /*25242c dark color*/
+    /*32313B less dark*/
+    /*0099b4 blue*/
+    /*01b94e green*/
+}
+
+h1 {
+    font: Bubblewump;
+    font-size: 120px;
+}
+
+div.logo {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    width: 569px;
+    height: 106px;
+    /*border: 3px solid #73AD21;*/
+}
+
+
+#left {
+    position: absolute;
+    left: -330px;
+    top: -200px;
+    color: #ea3e8b;
+}
+
+#center {
+    position: absolute;
+    left: -105px;
+    top: -115px;
+    text-align: center;
+    color: #0099b4;
+}
+
+#right {
+    position: absolute;
+    left: 390px;
+    top: -30px;
+    color: #01b94e;
+}
